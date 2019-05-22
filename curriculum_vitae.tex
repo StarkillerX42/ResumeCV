@@ -1,0 +1,221 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Freeman Curriculum Vitae
+% XeLaTeX Template
+% Version 2.0 (19/3/2018)
+%
+% This template originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Vel (vel@LaTeXTemplates.com)
+% Alessandro Plasmati
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%!TEX program = xelatex
+% NOTICE: This template must be compiled with XeLaTeX, the line above should
+% ensure this happens automatically but if it doesn't you will need to specify 
+% XeLaTeX as the engine in your editor or script
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%    PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt]{article} % Font size, can be: 10pt, 11pt or 12pt
+
+\input{structure.tex} % Include the file that specifies the document structure
+% Headers and footers can be added with the \lhead{} \rhead{} \lfoot{} \rfoot{} commands
+% Example right footer:
+%\rfoot{\color{headings}{\sffamily Last update: \today. Typeset with Xe\LaTeX}}
+
+%-------------------------------------------------------------------------------
+
+\begin{document}
+
+\begin{paracol}{2} % Begin the multi-column environment
+
+%-------------------------------------------------------------------------------
+%    NAME AND CURRICULUM VITAE TEXT
+%-------------------------------------------------------------------------------
+
+\parbox[top][0.12\textheight][c]{\linewidth}{ % Parbox to hold the author name and CV text; fixed height to match the colored box to the right, centered vertically and full line width
+    \vspace{-0.04\textheight} % Reduce whitespace above the parbox to separate it from the main content
+    \centering % Center text
+    {\sffamily\Huge Dylan Gatlin}\\\medskip % Your name
+    {\Huge\color{headings}\cvtextfont Curriculum Vitae}
+}
+\switchcolumn
+%-------------------------------------------------------------------------------
+%    COLOURED CONTACT DETAILS BOX
+%-------------------------------------------------------------------------------
+
+\parbox[top][0.12\textheight][c]{\linewidth}{
+    \vspace{-0.04\textheight}
+    \colorbox{shade}{
+        \begin{supertabular}{p{0.05\linewidth}|p{0.775\linewidth}}
+            \raisebox{-1pt}{\faPhone} & +1 (303) 912-2053 \\
+            \raisebox{0pt}{\small\faEnvelope} &
+             \href{mailto:dylan.gatlin@colorado.edu}
+             {dylan.gatlin@colorado.edu} \\
+            \raisebox{-1pt}{\faGithub} &
+             \href{https://github.com/StarkillerX42}
+             {https://github.com/StarkillerX42} \\
+            \raisebox{-1pt}{\faLinkedinSquare} &
+             \href{https://www.linkedin.com/in/dylan-gatlin-101655186/}
+             {https://www.linkedin.com/in/dylan-gatlin-101655186/} \\
+        \end{supertabular}
+    }
+}
+\end{paracol}
+
+
+%-------------------------------------------------------------------------------
+%    EDUCATION
+%-------------------------------------------------------------------------------
+\pagebreak[3]
+\section{Education} 
+
+\input{cu_boulder}
+
+\input{george_washington}
+
+
+%-------------------------------------------------------------------------------
+%    MAJOR RESEARCH PROJECT
+%-------------------------------------------------------------------------------
+\pagebreak[3]
+\section{Research Experience}
+
+\input{eric_wolf}
+
+\input{guy_stringfellow}
+
+
+%-------------------------------------------------------------------------------
+%    PUBLICATIONS
+%-------------------------------------------------------------------------------
+\pagebreak[3]
+\section{Publications}
+
+\input{publications}
+
+
+%-------------------------------------------------------------------------------
+%    WORK EXPERIENCE
+%-------------------------------------------------------------------------------
+\pagebreak[3]
+\section{Work Experience}
+
+\input{learning_assistant}
+
+\input{teaching_assistant}
+
+\input{vector_marketing}
+
+
+%-------------------------------------------------------------------------------
+%    LEADERSHIP EXPERIENCE
+%-------------------------------------------------------------------------------
+\pagebreak[3]
+\section{Leadership Experience}
+
+\input{cu_astronomy_club}
+
+%-------------------------------------------------------------------------------
+%    AWARDS
+%-------------------------------------------------------------------------------
+\pagebreak[3]
+\section{Awards}
+
+    \position{2015}
+    {}
+    {President's Club}
+    {Vector Marketing}
+    {}
+
+    \position{2015 -- 2018}
+    {}
+    {Esteemed Scholars Recipient}
+    {University of Colorado at Boulder}
+    {Baker Scholar}
+        
+    \position{2018}
+    {}
+    {Dean's List}
+    {University of Colorado at Boulder}
+    {}
+
+
+%-------------------------------------------------------------------------------
+%    COMPUTER SKILLS
+%-------------------------------------------------------------------------------
+\pagebreak[3]
+\section{Programming Skills}
+
+\begin{supertabular}{rl}
+    \tableentry{Expert}{Python}{}
+    \tableentry{}{\LaTeX}{spaceafter}
+ 
+    \tableentry{Advanced}{Unix}{}
+    \tableentry{}{Fortran}{spaceafter}
+
+    \tableentry{Intermediate}{Mathematica}{}
+    \tableentry{}{IRAF}{}
+    \tableentry{}{C}{spaceafter}
+
+
+\end{supertabular}
+
+
+%-------------------------------------------------------------------------------
+%    RELEVANT COURSEWORK
+%-------------------------------------------------------------------------------
+\pagebreak[3]
+\section{Relevant Coursework}
+
+\begin{supertabular}{rl}
+\tableentry{ASTR 2600}{Scientific Programming}{spaceafter}
+
+\tableentry{ASTR 3710/ASTR 3750}{Starfleet Academy (Planetary track)}
+{spaceafter}
+
+\tableentry{ASTR 3510/ASTR 3520}{Observational Astronomy}{spaceafter}
+
+\tableentry{ATOC 4500}{Remote Atmospheric Sensing}{spaceafter}
+
+\tableentry{ATOC 4500}{Numerical Modeling}{spaceafter}
+
+\tableentry{PHYS 3210}{Classical Mechanics 2}{spaceafter}
+
+\tableentry{PHYS 3320}{Electricity and Magnetism 2}{spaceafter}
+
+\tableentry{PHYS 3310}{Quantum Mechanics}{spaceafter}
+
+\tableentry{MATH 2130}{Linear Algebra}{spaceafter}
+
+\tableentry{MATH 3430}{Ordinary Differential Equations}{spaceafter}
+
+\end{supertabular}
+
+
+%-------------------------------------------------------------------------------
+%    REFERENCES
+%-------------------------------------------------------------------------------
+\pagebreak[3]
+\section{References}
+
+\begin{paracol}{2}
+    \input{ref_jeremy_darling}
+
+    \input{ref_david_brain}
+\switchcolumn
+    \input{ref_eric_wolf}
+
+    \input{ref_peter_pilewskie}
+
+\end{paracol}
+
+\end{document}

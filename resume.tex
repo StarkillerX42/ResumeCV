@@ -1,0 +1,176 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Freeman Curriculum Vitae
+% XeLaTeX Template
+% Version 2.0 (19/3/2018)
+%
+% This template originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Vel (vel@LaTeXTemplates.com)
+% Alessandro Plasmati
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%!TEX program = xelatex
+% NOTICE: This template must be compiled with XeLaTeX, the line above should
+% ensure this happens automatically but if it doesn't you will need to specify 
+% XeLaTeX as the engine in your editor or script
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt]{article} % Font size, can be: 10pt, 11pt or 12pt
+
+\input{structure.tex} % Include the file that specifies the document structure
+% Headers and footers can be added with the \lhead{} \rhead{} \lfoot{} \rfoot{} commands
+% Example right footer:
+%\rfoot{\color{headings}{\sffamily Last update: \today. Typeset with Xe\LaTeX}}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\begin{paracol}{2} % Begin the multi-column environment
+\setcolumnwidth{0.7\textwidth, 0.3\textwidth}
+%----------------------------------------------------------------------------------------
+%    NAME AND CURRICULUM VITAE TEXT
+%----------------------------------------------------------------------------------------
+
+\parbox[top][0.08\textheight][c]{\linewidth}{ % Parbox to hold the author name and CV text; fixed height to match the colored box to the right, centered vertically and full line width
+    \vspace{-0.04\textheight} % Reduce whitespace above the parbox to separate it from the main content
+    \centering % Center text
+    {\sffamily\Huge Dylan Gatlin}\\\medskip % Your name
+    {\Huge\color{headings}\cvtextfont Resume}
+}
+
+%----------------------------------------------------------------------------------------
+%    COLOURED CONTACT DETAILS BOX
+%----------------------------------------------------------------------------------------
+\switchcolumn
+\parbox[top][0.08\textheight][c]{\linewidth}{
+    \vspace{-0.04\textheight}
+    \colorbox{shade}{ % Create the coloured box
+        \begin{supertabular}{p{0.05\linewidth}|p{0.775\linewidth}}
+            \raisebox{-1pt}{\faPhone} & +1 (303) 912-2053 \\
+            \raisebox{0pt}{\small\faEnvelope} &
+             \href{mailto:dylan.gatlin@colorado.edu}
+             {dylan.gatlin@colorado.edu} \\
+            \raisebox{-1pt}{\faGithub} &
+             \href{https://github.com/StarkillerX42}
+             {https://github.com/StarkillerX42} \\
+            \raisebox{-1pt}{\faLinkedinSquare} & 
+            \href{https://www.linkedin.com/in/dylan-gatlin-101655186/}
+            {https://www.linkedin.com/in/dylan-gatlin-101655186/} \\
+        \end{supertabular}
+    }
+}
+\switchcolumn
+
+
+%-------------------------------------------------------------------------------
+%    EDUCATION
+%-------------------------------------------------------------------------------
+\medskip
+\section{Education} 
+
+\input{cu_boulder}
+
+% \input{george_washington}
+
+
+%-------------------------------------------------------------------------------
+%    MAJOR RESEARCH PROJECT
+%-------------------------------------------------------------------------------
+\medskip
+\section{Research Experience}
+
+\input{eric_wolf}
+
+\input{guy_stringfellow}
+
+
+%-------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%-------------------------------------------------------------------------------
+\medskip
+\section{Work Experience}
+
+\input{teaching_assistant}
+
+
+\switchcolumn
+%-------------------------------------------------------------------------------
+%    PUBLICATIONS
+%-------------------------------------------------------------------------------
+\medskip
+\section{Publications}
+
+\input{publications}
+
+%-------------------------------------------------------------------------------
+%	COMPUTER SKILLS
+%-------------------------------------------------------------------------------
+\medskip
+\section{Computer Skills} 
+
+\begin{supertabular}{rl}
+	
+	\tableentry{Intermediate}{Mathematica, IRAF, C}{spaceafter}
+	
+	\tableentry{Advanced}{Unix, Fortran}{spaceafter}
+
+    \tableentry{Expert}{Python, \LaTeX}{}
+	
+\end{supertabular}
+
+
+\medskip
+\section{Relevent Coursework}
+
+\begin{supertabular}{rl}
+\tableentry{ASTR 2600}{Scientific Programming}{spaceafter}
+
+\tableentry{ASTR 3710/ASTR 3750}{Starfleet Academy (Planetary track)}{spaceafter}
+
+\tableentry{ASTR 3510/ASTR 3520}{Observational Astronomy}{spaceafter}
+
+\tableentry{ATOC 4500}{Remote Atmospheric Sensing}{spaceafter}
+
+\tableentry{ATOC 4500}{Numerical Modeling}{spaceafter}
+
+\tableentry{PHYS 3210}{Classical Mechanics 2}{spaceafter}
+
+\tableentry{PHYS 3320}{Electricity and Magnetism 2}{spaceafter}
+
+\tableentry{PHYS 3310}{Quantum Mechanics}{spaceafter}
+
+\tableentry{MATH 2130}{Linear Algebra}{spaceafter}
+
+\tableentry{MATH 3430}{Ordinary Differential Equations}{spaceafter}
+
+\end{supertabular}
+
+
+%-------------------------------------------------------------------------------
+%	REFERENCES
+%-------------------------------------------------------------------------------
+\medskip
+\section{References}
+\input{ref_jeremy_darling}
+
+\input{ref_david_brain}
+
+\input{ref_eric_wolf}
+
+%-------------------------------------------------------------------------------
+
+\end{paracol}
+
+%-------------------------------------------------------------------------------
+
+\end{document}

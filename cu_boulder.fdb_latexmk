@@ -1,0 +1,15 @@
+# Fdb version 3
+["xdvipdfmx"] 0 "cu_boulder.xdv" "cu_boulder.pdf" "cu_boulder" 0
+  "cu_boulder.xdv" 0 -1 0 "xelatex"
+  (generated)
+  "cu_boulder.pdf"
+["xelatex"] 1558561508 "cu_boulder.tex" "cu_boulder.xdv" "cu_boulder" 1558561508
+  "/etc/texmf/web2c/texmf.cnf" 1558071573 475 c0e671620eb5563b2130f56340a5fde8 ""
+  "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1551226139 34566 ab5be96bde1a5acfd4f881dbe566b5fb ""
+  "/usr/share/texmf/web2c/texmf.cnf" 1551226139 34566 ab5be96bde1a5acfd4f881dbe566b5fb ""
+  "/var/lib/texmf/web2c/xetex/xelatex.fmt" 1558071628 3738445 962a16f74296dbb6d7104d24dcb7cc7a ""
+  "cu_boulder.aux" 1558561500 8 a94a2480d3289e625eea47cd1b285758 ""
+  "cu_boulder.tex" 1558561508 188 05dd7069cf590ad39811a4aebce39148 ""
+  (generated)
+  "cu_boulder.log"
+  "cu_boulder.xdv"
