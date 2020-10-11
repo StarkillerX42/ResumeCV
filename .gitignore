@@ -4,4 +4,5 @@
 *.out
 *.xdv
 *latexmk
-8.synctex.gz
+*.synctex.gz
+

@@ -20,41 +20,41 @@
 % 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%-------------------------------------------------------------------------------
-%    PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
-%-------------------------------------------------------------------------------
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
 
-\documentclass[11pt]{article} % Font size, can be: 10pt, 11pt or 12pt
+\documentclass[10pt]{article} % Font size, can be: 10pt, 11pt or 12pt
 
 \input{structure.tex} % Include the file that specifies the document structure
 % Headers and footers can be added with the \lhead{} \rhead{} \lfoot{} \rfoot{} commands
 % Example right footer:
 %\rfoot{\color{headings}{\sffamily Last update: \today. Typeset with Xe\LaTeX}}
 
-%-------------------------------------------------------------------------------
+%----------------------------------------------------------------------------------------
 
 \begin{document}
 
 \begin{paracol}{2} % Begin the multi-column environment
-
-%-------------------------------------------------------------------------------
+\setcolumnwidth{0.7\textwidth, 0.3\textwidth}
+%----------------------------------------------------------------------------------------
 %    NAME AND CURRICULUM VITAE TEXT
-%-------------------------------------------------------------------------------
+%----------------------------------------------------------------------------------------
 
-\parbox[top][0.12\textheight][c]{\linewidth}{
-    \vspace{-0.04\textheight}
-    \centering
+\parbox[top][0.08\textheight][c]{\linewidth}{ % Parbox to hold the author name and CV text; fixed height to match the colored box to the right, centered vertically and full line width
+    \vspace{-0.04\textheight} % Reduce whitespace above the parbox to separate it from the main content
+    \centering % Center text
     {\sffamily\Huge Dylan Gatlin}\\\medskip % Your name
-    {\Huge\color{headings}\cvtextfont Curriculum Vitae}
+    {\Huge\color{headings}\cvtextfont Resume}
 }
-\switchcolumn
-%-------------------------------------------------------------------------------
-%    COLOURED CONTACT DETAILS BOX
-%-------------------------------------------------------------------------------
 
-\parbox[top][0.12\textheight][c]{\linewidth}{
+%----------------------------------------------------------------------------------------
+%    COLOURED CONTACT DETAILS BOX
+%----------------------------------------------------------------------------------------
+\switchcolumn
+\parbox[top][0.08\textheight][c]{\linewidth}{
     \vspace{-0.04\textheight}
-    \colorbox{shade}{
+    \colorbox{shade}{ % Create the coloured box
         \begin{supertabular}{p{0.05\linewidth}|p{0.775\linewidth}}
             \raisebox{-1pt}{\faPhone} & +1 (303) 912-2053 \\
             \raisebox{0pt}{\small\faEnvelope} &
@@ -63,126 +63,79 @@
             \raisebox{-1pt}{\faGithub} &
              \href{https://github.com/StarkillerX42}
              {https://github.com/StarkillerX42} \\
-            \raisebox{-1pt}{\faLinkedinSquare} &
-             \href{https://www.linkedin.com/in/dylan-gatlin-101655186/}
-             {https://www.linkedin.com/in/dylan-gatlin-101655186/} \\
+            \raisebox{-1pt}{\faLinkedinSquare} & 
+            \href{https://www.linkedin.com/in/dylan-gatlin-101655186/}
+            {https://www.linkedin.com/in/dylan-gatlin-101655186/} \\
         \end{supertabular}
     }
 }
-\end{paracol}
+\switchcolumn
 
 
 %-------------------------------------------------------------------------------
 %    EDUCATION
 %-------------------------------------------------------------------------------
-\pagebreak[3]
+\medskip
 \section{Education} 
 
 \input{deg_cu_boulder}
 
-\input{deg_george_washington}
+
+%-------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%-------------------------------------------------------------------------------
+\medskip
+\section{Work Experience}
+
+\input{job_sdss}
+
+\input{job_teaching_assistant}
 
 
 %-------------------------------------------------------------------------------
 %    MAJOR RESEARCH PROJECT
 %-------------------------------------------------------------------------------
-\pagebreak[3]
+\medskip
 \section{Research Experience}
 
 \input{res_eric_wolf}
 
-\input{res_guy_stringfellow}
+%\input{res_guy_stringfellow}
 
 
+\switchcolumn
 %-------------------------------------------------------------------------------
 %    PUBLICATIONS
 %-------------------------------------------------------------------------------
-\pagebreak[3]
+\medskip
 \section{Publications}
 
 \input{publications}
 
-
 %-------------------------------------------------------------------------------
-%    WORK EXPERIENCE
+%	COMPUTER SKILLS
 %-------------------------------------------------------------------------------
-\pagebreak[3]
-\section{Work Experience}
-
-\input{job_sdss}
-
-\input{job_learning_assistant}
-
-\input{job_teaching_assistant}
-
-\input{job_vector_marketing}
-
-
-%-------------------------------------------------------------------------------
-%    LEADERSHIP EXPERIENCE
-%-------------------------------------------------------------------------------
-\pagebreak[3]
-\section{Leadership Experience}
-
-\input{led_cu_astronomy_club}
-
-%-------------------------------------------------------------------------------
-%    AWARDS
-%-------------------------------------------------------------------------------
-\pagebreak[3]
-\section{Awards}
-
-    \position{2015}
-    {}
-    {President's Club}
-    {Vector Marketing}
-    {}
-
-    \position{2015 -- 2018}
-    {}
-    {Esteemed Scholars Recipient}
-    {University of Colorado at Boulder}
-    {Baker Scholar}
-        
-    \position{2018}
-    {}
-    {Dean's List}
-    {University of Colorado at Boulder}
-    {}
-
-
-%-------------------------------------------------------------------------------
-%    COMPUTER SKILLS
-%-------------------------------------------------------------------------------
-\pagebreak[3]
-\section{Programming Skills}
+\medskip
+\section{Computer Skills} 
 
 \begin{supertabular}{rl}
-    \tableentry{Expert}{Python}{}
-    \tableentry{}{\LaTeX}{spaceafter}
- 
-    \tableentry{Advanced}{Unix}{}
-    \tableentry{}{Fortran}{spaceafter}
+	
+	\tableentry{Intermediate}{Mathematica, IRAF, C}{spaceafter}
+	
+	\tableentry{Advanced}{Unix, Fortran}{spaceafter}
 
-    \tableentry{Intermediate}{Mathematica}{}
-    \tableentry{}{IRAF}{}
-    \tableentry{}{C}{spaceafter}
-
-
+    \tableentry{Expert}{Python, \LaTeX}{}
+	
 \end{supertabular}
 
 
-%-------------------------------------------------------------------------------
-%    RELEVANT COURSEWORK
-%-------------------------------------------------------------------------------
-\pagebreak[3]
-\section{Relevant Coursework}
+\medskip
+\section{Relevent Coursework}
 
 \begin{supertabular}{rl}
 \tableentry{ASTR 2600}{Scientific Programming}{spaceafter}
 
-\tableentry{ASTR 3710/ASTR 3750}{Starfleet Academy (Planetary track)}
-{spaceafter}
+\tableentry{ASTR 3710/ASTR 3750}{Starfleet Academy (Planetary track)}{spaceafter}
 
 \tableentry{ASTR 3510/ASTR 3520}{Observational Astronomy}{spaceafter}
 
@@ -204,20 +157,20 @@
 
 
 %-------------------------------------------------------------------------------
-%    REFERENCES
+%	REFERENCES
 %-------------------------------------------------------------------------------
-\pagebreak[3]
+\medskip
 \section{References}
-Reference contact information available upon request
-\begin{paracol}{2}
-    \input{ref_jeremy_darling}
+\input{ref_jeremy_darling}
 
-    \input{ref_david_brain}
-\switchcolumn
-    \input{ref_eric_wolf}
+\input{ref_david_brain}
 
-    \input{ref_peter_pilewskie}
+\input{ref_eric_wolf}
+
+%-------------------------------------------------------------------------------
 
 \end{paracol}
+
+%-------------------------------------------------------------------------------
 
 \end{document}
