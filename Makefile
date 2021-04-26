@@ -10,5 +10,5 @@ cv:
 	$(LC) dylan_gatlin_resume.tex
 
 autoclean:
-	rm *.aux; rm *.fls; rm *.log; rm *.out; rm *.xdv; rm *latexmk; rm *.synctex.gz
+	rm *.aux; rm *.fls; rm *.log; rm *.out; rm *.xdv; rm *latexmk; rm *.synctex.gz rm *.bak
 
